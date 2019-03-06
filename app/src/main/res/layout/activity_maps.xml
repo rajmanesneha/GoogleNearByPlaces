@@ -1,0 +1,71 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/hbtn"
+            android:layout_width="169dp"
+            android:layout_height="wrap_content"
+            android:text="Hospitals"
+            android:onClick="onClick"
+            android:background="#009A9A"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            />
+
+                <Button
+                    android:id="@+id/rbtn"
+                    android:layout_width="182dp"
+                    android:layout_height="wrap_content"
+                    android:background="#009A9A"
+                    android:onClick="onClick"
+                    android:text="Restaurants"
+                    android:layout_margin="10dp"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <Button
+            android:id="@+id/pbtn"
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:text="Police Stations"
+            android:onClick="onClick"
+            android:background="#009A9A"
+            android:layout_margin="10dp"
+            android:textColor="#FFFFFF"
+            android:layout_weight="0.19" />
+
+        <Button
+            android:id="@+id/bbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2.15"
+            android:background="#009A9A"
+            android:onClick="onClick"
+            android:text="Banks"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="385dp"
+        android:layout_height="470dp"/>
+
+</LinearLayout>
+
+
+
